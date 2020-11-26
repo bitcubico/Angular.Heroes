@@ -6,13 +6,15 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { PageNotFoundComponent } from './components/error/page-not-found/page-not-found.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { SearchComponent } from './components/search/search.component';
 
 const APP_ROUTES: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
-    { path: 'about', component: AboutComponent },
+    { path: 'about-us', component: AboutComponent },
     { path: 'heroes', component: HeroesComponent },
     { path: 'heroe/:id', component: HeroeComponent},
+    { path: 'search/:keyWord', component: SearchComponent},
     { path: 'error/404', component: PageNotFoundComponent},
     { path: '**', component: PageNotFoundComponent}
 

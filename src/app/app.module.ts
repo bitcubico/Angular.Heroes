@@ -17,6 +17,8 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { PageNotFoundComponent } from './components/error/page-not-found/page-not-found.component';
 import { HeroesService } from './services/heroes.service';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     AboutComponent,
     HeroesComponent,
     PageNotFoundComponent,
-    HeroeComponent
+    HeroeComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     APP_ROUTING
   ],
   providers: [

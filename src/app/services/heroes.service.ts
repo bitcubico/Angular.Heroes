@@ -69,6 +69,17 @@ export class HeroesService {
 
     return this._heroes[idx];
   }
+
+  searchByKeyWord(keyWord: string): Heroe[]
+  {
+    if(keyWord.length == 0)
+      return this._heroes;
+
+    keyWord = keyWord.toLowerCase();
+    let response: Heroe[] = this._heroes.filter(heroe => heroe.nombre.toLowerCase().indexOf(keyWord) >= 0);
+
+    return response;
+  }
 }
 
 export interface Heroe {
