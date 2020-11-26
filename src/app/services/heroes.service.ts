@@ -62,6 +62,13 @@ export class HeroesService {
   getHeroes(): Heroe[] {
     return this._heroes;
   }
+
+  getHeroeById(idx: number): Heroe {
+    if(idx >= this._heroes.length || idx < 0)
+      return null;
+
+    return this._heroes[idx];
+  }
 }
 
 export interface Heroe {
