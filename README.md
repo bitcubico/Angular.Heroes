@@ -1,6 +1,9 @@
-# Spa
+# Heroes - Angular | Bitcubico Technology
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+Aplicación desarrollada en Angular para dar información básica de algunos de los super héroes de los comics de MARVEL y DC
+
+## Demo
+[BITCubico Technology](http://angular.heroes.bitcubico.com/)
 
 ## Development server
 
