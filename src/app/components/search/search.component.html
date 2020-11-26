@@ -11,18 +11,6 @@
 
     <!-- Heroes list -->
     <div class="card-columns">
-        <div class="card animated fadeIn" *ngFor="let data of heroes; let i = index">
-            <a [routerLink]="['/heroe', i]">
-                <img class="card-img-top " [src]="data.img " [alt]="data.nombre">
-            </a>
-            <div class="card-body ">
-                <h4 class="card-title ">{{ data.nombre }}</h4>
-                <p class="card-text ">{{ data.bio }}</p>
-                <p class="card-text ">
-                    <small class="text-muted ">{{ data.aparicion | date:'MM-y' }}</small>
-                </p>
-                <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block ">Ver mas...</a>
-            </div>
-        </div>
+        <app-heroe-card [heroe]="heroe" [id]="i" *ngFor="let heroe of heroes; let i = index"></app-heroe-card>
     </div>
 </div>

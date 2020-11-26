@@ -19,6 +19,7 @@ import { HeroesService } from './services/heroes.service';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './components/search/search.component';
+import { HeroeCardComponent } from './components/partials/heroe-card/heroe-card.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SearchComponent } from './components/search/search.component';
     HeroesComponent,
     PageNotFoundComponent,
     HeroeComponent,
-    SearchComponent
+    SearchComponent,
+    HeroeCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { HeroesService, Heroe } from '../../services/heroes.service';
 
 @Component({
@@ -6,7 +6,6 @@ import { HeroesService, Heroe } from '../../services/heroes.service';
   templateUrl: './heroes.component.html'
 })
 export class HeroesComponent implements OnInit {
-
   heroes: Heroe[] = []
 
   constructor(private _heroesService:HeroesService) { }
