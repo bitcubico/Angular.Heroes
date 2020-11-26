@@ -10,15 +10,15 @@
 
     <!-- Heroes list -->
     <div class="card-columns">
-        <div class="card animated fadeIn" *ngFor="let heroe of heroes">
-            <img class="card-img-top " [src]="heroe.img " [alt]="heroe.nombre">
+        <div class="card animated fadeIn" *ngFor="let data of heroes; let i = index">
+            <img class="card-img-top " [src]="data.img " [alt]="data.nombre">
             <div class="card-body ">
-                <h4 class="card-title ">{{ heroe.nombre }}</h4>
-                <p class="card-text ">{{ heroe.bio }}</p>
+                <h4 class="card-title ">{{ data.nombre }}</h4>
+                <p class="card-text ">{{ data.bio }}</p>
                 <p class="card-text ">
-                    <small class="text-muted ">{{ heroe.aparicion }}</small>
+                    <small class="text-muted ">{{ data.aparicion }}</small>
                 </p>
-                <a href="#" class="btn btn-outline-primary btn-block ">Ver mas...</a>
+                <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block ">Ver mas...</a>
             </div>
         </div>
     </div>
