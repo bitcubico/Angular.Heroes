@@ -15,6 +15,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { PageNotFoundComponent } from './components/error/page-not-found/page-not-found.component';
+import { HeroesService } from './services/heroes.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { PageNotFoundComponent } from './components/error/page-not-found/page-no
     BrowserAnimationsModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
